@@ -448,3 +448,103 @@ color:white;
     margin-right:20px;
     
 }
+
+
+/*plans*/
+.plan
+{
+    background-color: #bbb;
+}
+
+.plan .col
+{
+    background-color: rgb(245,245,245);
+}
+.plan-type
+{   
+    display: block;
+    font-size: 150%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 200;
+
+}
+.plan-block
+{
+    box-shadow: 3px 2px 8px rgb(100,100,100);
+}
+.plan-block .sdw
+{
+    
+    padding: 20px;
+    
+}
+.plan-price
+{
+    display: block;
+   color:#e67e22;
+   font-size: 300%;
+   font-weight: 100;
+   margin-bottom: 5px;
+
+}
+.plan-price span{
+    font-size: 40%;
+    color:#e67e22;
+    font-weight: 300;
+}
+
+.plan-des
+{
+    display: block;
+    color:black;
+    font-size: 110%;
+    font-weight: 300;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+}
+
+.plan p::before
+{
+    margin-top: 10px;
+    display:block;
+    content: "";
+    background-color: #eee;
+    border:1px solid #eee;
+    margin-bottom: 30px;
+}
+.plan p::after
+{
+    margin-top: 30px;
+    display:block;
+    content: "";
+    background-color: #eee;
+    border:1px solid #eee;
+}
+
+.plan p{
+    
+    font-size: 80%;
+    line-height: 2;
+    margin: 0;
+    background-color: white;
+    font-weight: 400;
+    
+}
+
+.plan p img{
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color:#e67e22;
+
+}
+
+.plan a{
+    left:20%;
+    margin: 20px 50px 20px 20px;
+
+    
+}
