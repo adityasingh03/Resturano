@@ -391,3 +391,60 @@ border-radius: 2px;
     color: #da731a;
     text-decoration: none;
 }
+
+/*
+customer
+*/
+
+.customer
+{
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(img/back-customers.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.customer h2
+{
+color:white;
+}
+
+.customer div blockquote{
+    color:white;
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 200;
+    padding:2%;
+    margin-top: 20px;
+    
+
+}
+
+.customer div blockquote:before{
+    content:"\201C" ;
+    color:white;
+    font-size: 300%; 
+    display: block;
+    
+
+
+}
+.customer div img{
+    height: 60px;
+    width:60px;
+    border-radius: 100px;
+    float:left;
+   margin:0 20px;
+}
+
+.customer div cite{
+    margin-top:20px;
+    float:right;
+    color:white;
+    font-weight: 300;
+    font-size: 120%;
+    
+    margin-right:20px;
+    
+}
