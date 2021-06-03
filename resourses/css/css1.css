@@ -252,7 +252,7 @@ padding-top: 30px;
     
     opacity: 0.4;
    
-    transform:  matrix(1.4,0,0,1.4,-50%,-50%);
+    
     transition: transform 0.4s, opacity 0.4s;
 
 }
@@ -264,7 +264,7 @@ ul li img:hover{
     padding: 0;
     overflow: hidden;
     opacity: 0.8;
-    transform: matrix(1.1,0,0,1.1,50px,50px);
+    transform: scale(1.1);
    
 
 }
