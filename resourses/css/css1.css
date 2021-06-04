@@ -214,6 +214,7 @@ li a:visited{
 /*
 favourates
 */
+
 .fav
 {
 display:block;
@@ -249,11 +250,10 @@ padding-top: 30px;
     padding: 0;
     transform: scale(1.4);
     overflow: hidden;
-    
     opacity: 0.4;
-   
-    
+    background-position: center;
     transition: transform 0.4s, opacity 0.4s;
+
 
 }
 
@@ -265,6 +265,7 @@ ul li img:hover{
     overflow: hidden;
     opacity: 0.8;
     transform: scale(1.1);
+   
    
 
 }
@@ -341,6 +342,7 @@ cities
 .boxcity
 {
     float: left;
+    padding-bottom: 20px;
 }
 .boxcity img
 {
@@ -402,6 +404,7 @@ background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(img/bac
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
+padding-bottom: 40px;
 }
 
 .customer h2
@@ -454,6 +457,7 @@ color:white;
 .plan
 {
     background-color: #bbb;
+    padding-bottom: 40px;
 }
 
 .plan .col
@@ -548,3 +552,150 @@ color:white;
 
     
 }
+
+/*
+Form
+*/
+.form
+{
+    
+    background-color: #efefef;
+    font-size: 80%;
+    padding-bottom: 40px;
+    
+}
+.form2
+{
+    margin-top: 50px;
+    
+}
+
+.form2 label{
+    font-weight: 400;
+    font-size: 120%;
+}
+
+input,select,textarea
+{
+    width: 60%;
+    padding: 10px 10px;
+    border: 1px solid #bbb;
+    box-shadow: 2px 2px 2px #999 ;
+    border-radius: 4px;
+    color: #555;
+}
+input:focus,select:focus,textarea:focus
+{
+    width: 60%;
+    padding: 10px 10px;
+    border: 1px solid #e67e22;
+    box-shadow: 2px 2px 2px #444 ;
+    outline: none;
+    border-radius: 4px;
+}
+
+.form .newsl
+{
+    width: 2%;
+    margin-right:2% ;
+    margin-bottom: 10px;
+    border:none;
+    padding:0;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form2 span{
+    font-weight: 300 ;
+    font-size: 110%;
+    
+    
+}
+
+.form .but1{
+ position: relative;
+ left: 40%;
+
+
+}
+
+.form a img{
+    height: 20px;
+    margin-left: 4px;
+    width: 20px;
+    float: right;
+}
+
+.form a{
+    font-size: 120%;
+}
+
+.formdet
+{
+    margin-left: 200px;
+    background-color: rgb(231, 20, 20);
+}
+
+
+
+/*
+footer
+*/
+
+.footer
+{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.footer li a:link,
+.footer li a:visited
+{
+    color:#ddd;
+    border-bottom: 0 solid rgb(184, 182, 182);
+    transition: border-bottom 0.1s;
+}
+
+.footer li a:hover,
+.footer li a:active
+{
+    color:#ddd;
+    border-bottom: 2px solid rgb(184, 182, 182);
+
+}
+
+.footer li a img{
+    height: 24px;
+    width: 24px;
+ 
+}
+
+.foot-link
+{
+    display: inline-block;
+    font-size: 80%;
+
+}
+
+.social-m
+{
+   display: inline-block;
+   margin-left: 25%;
+}
+
+.footer .social-m li  a
+{
+
+    border-bottom: 0 solid rgb(184, 182, 182);
+    
+}
+
+.footer p{
+    text-align: center;
+    color: white;
+    font-size: 80%;
+    font-weight: 200;
+    
+
+}
+
