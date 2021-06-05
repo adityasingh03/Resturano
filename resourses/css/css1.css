@@ -11,6 +11,7 @@ html{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden ;
 }
 
 /*
@@ -105,9 +106,10 @@ padding: 20px 0;
 header
 */
 header{
-    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url('img/hero.jpg');
+    background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.4)),url('img/hero.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
     margin:0;
 }
@@ -209,11 +211,49 @@ li a:hover,
 li a:visited{
     border-bottom: 2px solid #e67e22;
 }
+/*sticky*/
+.sticky
+{
+    
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    overflow: hidden; 
+    box-shadow: 0px 1px 5px #222;
+    display: none;/*remove this linbe */
+}
 
+.sticky .logo
+{
+    float:left;
+    height: 80px;
+}
+.stickyul
+{
+    float: right; 
+      
+}
+.sticky li{
+    padding: 20px 35px 0;
+    
+}
+
+
+.sticky li a
+{
+    color:black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 
 /*
 favourates
 */
+
 .fav
 {
 display:block;
@@ -247,13 +287,12 @@ padding-top: 30px;
     width: 100%;
     margin: 0;
     padding: 0;
-    transform: scale(1.4);
+    transform: scale(1.5);
     overflow: hidden;
-    
     opacity: 0.4;
-   
-    transform:  matrix(1.4,0,0,1.4,-50%,-50%);
+    background-position: center;
     transition: transform 0.4s, opacity 0.4s;
+
 
 }
 
@@ -264,7 +303,8 @@ ul li img:hover{
     padding: 0;
     overflow: hidden;
     opacity: 0.8;
-    transform: matrix(1.1,0,0,1.1,50px,50px);
+    transform: scale(1.0);
+   
    
 
 }
@@ -279,11 +319,11 @@ ul li img:hover{
   .iphone
   {
       position: relative;
-      height: 400px;
-      width: 200px;
-      left: 20%;
+      height: 300px;
+      width: 45%;
+      left: 0;
       float:left;
-      margin-right: 10%;
+      
 
      
 
@@ -291,7 +331,7 @@ ul li img:hover{
  .work
  {
      float: right;
-     padding-top: 50px;
+     padding-top: 20px;
      margin-right: 20px;
      
  }
@@ -319,7 +359,7 @@ ul li img:hover{
 
 .newrow
 {
-    padding: 10px 0;
+    padding: 20px 0;
     clear:both;
 }
 
@@ -338,14 +378,21 @@ ul li img:hover{
 /*
 cities
 */
+.cities{
+    padding-left: 5%;
+}
 .boxcity
 {
     float: left;
+    padding-bottom: 20px;
+    margin:0;
+    
 }
 .boxcity img
 {
 width: 90%;
 border-radius: 2px;
+height: 130px;
 
 
 }
@@ -373,6 +420,7 @@ border-radius: 2px;
     letter-spacing: 0;
     font-size: 80%;
     font-weight: 400;
+    
 }
 
 .boxcity .icon
@@ -380,6 +428,7 @@ border-radius: 2px;
     height: 23px;
     width: 23px;
     margin-right: 15px;
+    
 }
 
 .cities
@@ -402,6 +451,7 @@ background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(img/bac
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
+padding-bottom: 40px;
 }
 
 .customer h2
@@ -417,6 +467,7 @@ color:white;
     font-weight: 200;
     padding:2%;
     margin-top: 20px;
+    margin-bottom: 30px;
     
 
 }
@@ -445,6 +496,269 @@ color:white;
     font-weight: 300;
     font-size: 120%;
     
-    margin-right:20px;
+    margin-right:30px;
     
+}
+
+
+/*plans*/
+.plan
+{
+    background-color: #bbb;
+    padding-bottom: 40px;
+}
+
+.plan .col
+{
+    background-color: rgb(245,245,245);
+}
+.plan-type
+{   
+    display: block;
+    font-size: 150%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 200;
+
+}
+.plan-block
+{
+    box-shadow: 3px 2px 8px rgb(100,100,100);
+}
+.plan-block .sdw
+{
+    
+    padding: 20px;
+    
+}
+.plan-price
+{
+    display: block;
+   color:#e67e22;
+   font-size: 300%;
+   font-weight: 100;
+   margin-bottom: 5px;
+
+}
+.plan-price span{
+    font-size: 40%;
+    color:#e67e22;
+    font-weight: 300;
+}
+
+.plan-des
+{
+    display: block;
+    color:black;
+    font-size: 110%;
+    font-weight: 300;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+}
+
+.plan p::before
+{
+    margin-top: 10px;
+    display:block;
+    content: "";
+    background-color: #eee;
+    border:1px solid #eee;
+    margin-bottom: 30px;
+}
+.plan p::after
+{
+    margin-top: 30px;
+    display:block;
+    content: "";
+    background-color: #eee;
+    border:1px solid #eee;
+}
+
+.plan p{
+    
+    font-size: 80%;
+    line-height: 2;
+    margin: 0;
+    background-color: white;
+    font-weight: 400;
+    
+}
+
+.plan p img{
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color:#e67e22;
+
+}
+
+.plan a{
+    left:20%;
+    margin: 20px 50px 20px 20px;
+
+    
+}
+
+/*
+Form
+*/
+.form
+{
+    
+    background-color: #efefef;
+    font-size: 80%;
+    padding-bottom: 40px;
+    padding-left: 10%;
+    
+}
+.form2
+{
+    margin-top: 50px;
+    
+}
+
+.form2 label{
+    font-weight: 400;
+    font-size: 120%;
+}
+
+input,select,textarea
+{
+    width: 60%;
+    padding: 10px 10px;
+    border: 1px solid #bbb;
+    box-shadow: 2px 2px 2px #999 ;
+    border-radius: 4px;
+    color: #555;
+}
+input:focus,select:focus,textarea:focus
+{
+    width: 60%;
+    padding: 10px 10px;
+    border: 1px solid #e67e22;
+    box-shadow: 2px 2px 2px #444 ;
+    outline: none;
+    border-radius: 4px;
+}
+
+.form .newsl
+{
+    width: 2%;
+    margin-right:2% ;
+    margin-bottom: 10px;
+    border:none;
+    padding:0;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form2 span{
+    font-weight: 300 ;
+    font-size: 110%;
+    
+    
+}
+.button
+{
+    width: 40%;
+}
+.form .but1{
+ float: right;
+
+
+
+}
+
+.form a img{
+    height: 20px;
+    margin-left: 4px;
+    width: 20px;
+    float: right;
+}
+
+.form a{
+    font-size: 120%;
+}
+
+.formdet
+{
+    margin-left: 200px;
+    background-color: rgb(231, 20, 20);
+}
+
+
+
+/*
+footer
+*/
+
+.footer
+{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.footer li a:link,
+.footer li a:visited
+{
+    color:#ddd;
+    border-bottom: 0 solid rgb(184, 182, 182);
+    transition: border-bottom 0.1s;
+}
+
+.footer li a:hover,
+.footer li a:active
+{
+    color:#ddd;
+    border-bottom: 2px solid rgb(184, 182, 182);
+
+}
+
+.footer li a img{
+    height: 24px;
+    width: 24px;
+ 
+}
+
+.foot-link
+{
+    display: inline-block;
+    font-size: 80%;
+
+}
+
+.social-m
+{
+   display: inline-block;
+   margin-right: 10px;
+   float: right;
+}
+
+.social-m::after{
+    clear: both;
+
+}
+
+.footer .social-m li  a
+{
+
+    border-bottom: 0 solid rgb(184, 182, 182);
+    
+}
+
+.footer p{
+    text-align: center;
+    color: white;
+    font-size: 80%;
+    font-weight: 200;
+    line-height: 2;
+    
+
+}
+
+.footp
+{
+    clear:both;
 }
