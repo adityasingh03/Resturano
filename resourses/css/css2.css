@@ -1,0 +1,35 @@
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  
+  .block
+  {
+      display: flex;
+      flex-direction: row;
+      background-color: aqua;
+      flex-wrap: wrap;
+  }
+
+
+  .block-s
+  {
+      height: 200px;
+      width: 150px;
+      padding: 10px;
+      margin: 20px;
+      background-color: blue;
+      flex:1 0 20%
+      
+  }

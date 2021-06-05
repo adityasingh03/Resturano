@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @media only screen and (max-width:1250px)
 {
@@ -393,4 +394,401 @@ header .but1
 
 @media only screen and (max-width:400px)
  
+=======
+
+@media only screen and (max-width:1250px)
+{
+    .form .but1{
+        margin:0;
+       
+       
+       } 
+}
+
+@media only screen and (max-width:1240px)
+{
+.head
+{
+    padding-left: 30px;
+}
+}
+@media only screen and (max-width:1200px)
+{
+    .head
+    {
+        padding-left: 10%;
+        width: 100%;
+    }
+
+    .logo
+    {
+        padding-left: 5%;
+    }
+    .we-are
+{
+    padding: 0 1% 0 3%;
+    font-size: 90%;
+}
+.we-are h1,.we-are-h2
+{
+    font-size: 110%;
+}
+
+.boxcity .icon
+{ 
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.plan-block
+{
+    width: 31%;
+    font-size: 18px;
+
+}
+.planpar
+{
+    padding-left: 5%;
+}
+
+.social-m
+{
+   
+   margin-right: 2%;
+}
+.navbar
+{
+    padding-right: 2%;
+}
+
+}
+
+@media only screen and (max-width:1085px)
+{
+   .plan-price
+   {
+       font-size: 250%;
+   }
+   .plan-des
+   {
+    font-size: 95%;
+    font-weight: 400;
+   }
+   .navbar
+   {
+       font-size: 90%;
+       letter-spacing: 0;
+       word-spacing: 0px;
+   }
+   .navbar li{
+    padding: 35px 10px;
+   }
+   .customer div cite
+   {
+font-size: 90%;
+margin-right: 40px;
+   }
+}
+
+@media only screen and (max-width:1023px)
+{
+    body {
+font-size: 18px;
+line-height: 1.2;
+    }
+   .customer div cite
+   {
+font-size: 90%;
+margin-right: 20px;
+   }
+   .customer div blockquote
+   {
+       font-size: 90%;
+   }
+   .plan-price
+   {
+       font-size: 200%;
+       font-weight: 400;
+   }
+   .plan-des
+   {
+    font-size: 85%;
+    font-weight: 400;
+   }
+   .iphone
+    {
+        height: 220px;
+        margin-top: 40px;
+    }
+    .we-are h4{
+        font-size: 110%;
+    }
+
+}
+
+@media only screen and (max-width:900px)
+{
+    .customer 
+    {
+        font-size: 80%;
+    }
+    .customer div img
+    {
+        clear:both;
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+        left:20%;
+    }
+
+    body{
+        font-size: 16px;
+    }
+    .boxcity p{
+        line-height: 2;
+    }
+    .footer
+    {
+        position: relative;
+        height: 400px;
+    }
+    .footp
+    {
+        position: absolute;
+        top:100px;
+        left:30%;
+        font-size: 24px;
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width:767px)
+{
+    body{
+        font-size: 15px;
+
+    }
+    section
+    {
+padding:30px 0;
+    }
+    .row
+    {
+        padding:0 4%;
+    }
+    .col{
+        width: 100%;
+    }
+    .navbar{
+        visibility: hidden;
+        
+    }
+    .bar{
+        padding-top: 20px;
+    }
+   .logo{
+       margin:0 30%;
+       padding: 0;
+   }
+   .head
+   {
+       font-size:90%;
+       position: static;
+       text-align: center;
+       width: 100vw;
+       padding: 0;
+       position: absolute;
+        
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+   }
+   .iphone{
+       width: 80%;
+       left: 10%;
+   }
+   .work
+   {
+       width: 90%;
+   }
+.simple p {
+margin-top: 15px;
+}
+.boxcity {
+width: 49%;
+}
+.boxcity p 
+{
+line-height: 2.5;
+font-size: 100%;
+}
+
+.boxcity .icon{
+    margin-top: 8px;
+}
+.customer div blockquote
+{
+    font-size: 20px;
+    margin: 0 60px;
+} 
+.customer div img{
+ margin:0;
+}
+
+.customer div cite{
+    
+    clear:both;
+    color:white;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: italic;
+    
+   }
+
+.customer div img{
+    display:none;
+}
+.plan-block{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+
+.plan-block:first-child{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5px;
+}
+
+.form2 .row
+{
+    padding: 0;
+}
+.form2 .col
+{
+    display:inline-block;
+    width: 45%;
+}
+.form2 label
+{
+    padding-top: 0;
+    font-size: 150%;
+}
+.form2 .newsl
+{
+    width: 20px;
+}
+
+input, textarea,select{
+    width: 95%;
+}
+input:focus, textarea:focus,select:focus{
+    width: 100%;
+}
+
+.form .but{
+margin:0 10px 0 0;
+}
+.social-m li {
+    display:block;
+    margin: 2px 10px;
+    padding: 10px;
+}
+section .social-m
+{
+    margin-top: 0;
+}
+.foot-link
+{
+ width: 80vw; 
+ margin-left: 10vw;
+ font-size: 90%;
+
+
+}
+
+.foot-link li{
+    padding: 35px 10px;
+}
+
+header .but
+{
+    width: 50%;
+    display: block;
+    
+    margin-bottom: 20px;
+    margin-left: 25% ;
+    font-size: 110%;
+    font-weight: 400;
+}
+.but1:link , .but1:visited{
+    width: 50%;
+    margin-left: 25% ;
+}
+header .but1
+{
+    margin-top: 40px;
+} 
+.we-are h2
+{
+    font-size: 200%;
+}
+.we-are h4
+{
+    font-size: 140%;
+}
+.we-are h3
+{
+    font-size: 150%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.we-are p {
+    font-size: 120%;
+    font-weight: 300;
+}
+
+.fav ul {
+    height: 100px;
+    overflow: hidden;
+    
+}
+
+}
+
+@media only screen and (max-width:920px)
+{
+    
+        .social-m li{
+          display: block;
+          padding: 10px 20px;
+        }
+        .social-m
+        {
+            margin-top: 50px;
+        }    
+        .footer
+        {
+            position: relative;
+            height: 400px;
+        }
+        .footp
+        {
+            position: absolute;
+            top:200px;
+            left:30%;
+            font-size: 24px;
+        }
+}
+
+@media only screen and (max-width:400px)
+ 
+>>>>>>> fdf49f6020e1747a9bbdf65952794d2b1ba628e1
 {}

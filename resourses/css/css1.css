@@ -385,7 +385,10 @@ cities
 {
     float: left;
     padding-bottom: 20px;
+<<<<<<< HEAD
     margin:0;
+=======
+>>>>>>> fdf49f6020e1747a9bbdf65952794d2b1ba628e1
     
 }
 .boxcity img
@@ -761,4 +764,8 @@ footer
 .footp
 {
     clear:both;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fdf49f6020e1747a9bbdf65952794d2b1ba628e1
