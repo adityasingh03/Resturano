@@ -84,7 +84,13 @@ const obj={
     fn:'Adi',
     sn:'Singh',
     roll:201952202,
-    fn: function(c){return c*10}
+    fc: function(c){return c*10}
 };
 
-console.log('${obj.fn} has sir name ${obj.sn} and roll no ${obj.roll} and has shares of rs ${obj.fn(100)}');
+console.log(`${obj.fn} has sir name ${obj.sn} and roll no ${obj.roll} and has shares of rs ${obj.fc(100)}`);
+let k;
+function funct(k)
+{
+    return obj.fn;
+}
+console.log (obj.fn);
