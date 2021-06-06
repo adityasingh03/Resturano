@@ -94,3 +94,17 @@ function funct(k)
     return obj.fn;
 }
 console.log (obj.fn);
+
+
+let arr2=[100,200,300,400,500,600];
+ const fn1=  ar =>
+ {
+     let p=0;
+     for(let x in ar)
+     {
+        p=p+ar[x];
+     }
+     return p/ar.length;
+ }
+
+ console.log(fn1(arr2));
