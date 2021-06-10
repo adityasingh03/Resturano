@@ -1,35 +1,168 @@
-.flex-container {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: DodgerBlue;
-  }
-  
-  .flex-container > div {
-    background-color: #f1f1f1;
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+html {
+  font-size: 20px;
+  color: black;
+}
 
-  
-  .block
-  {
-      display: flex;
-      flex-direction: row;
-      background-color: aqua;
-      flex-wrap: wrap;
-  }
+/*navbar*/
+li {
+  display: inline-block;
+  padding: 35px 20px;
+}
 
+li a:link,
+li a:visited {
+  text-decoration: none;
 
-  .block-s
-  {
-      height: 200px;
-      width: 150px;
-      padding: 10px;
-      margin: 20px;
-      background-color: blue;
-      flex:1 0 20%
-      
-  }
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  border-bottom: 0 solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+li a:hover,
+li a:active {
+  color: #e67e22;
+  border-bottom: 2px solid #e67e22;
+}
+.sticky {
+  height: 60px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0px 1px 5px #222;
+}
+
+.sticky .logo {
+  float: left;
+  height: 90px;
+}
+.stickyul {
+  float: right;
+}
+.sticky li {
+  padding: 20px 35px 0;
+}
+
+.sticky li a {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 105%;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: black;
+}
+
+/*breakfast*/
+
+h2 {
+  letter-spacing: 2px;
+  background-color: #222;
+  font-size: 170%;
+  font-weight: 300;
+  padding: 50px 0 10px 0;
+  text-align: center;
+  color: white;
+}
+
+h2:after {
+  display: block;
+  margin: auto;
+  width: 100px;
+  text-align: center;
+  background-color: #e67e22;
+  content: " ";
+  border: 1px solid #e67e22;
+  margin-top: 20px;
+}
+
+.dis {
+  font-family: "Montserrat", "Arial", sans-serif;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-bottom: 50px;
+}
+
+.brk {
+  border: 1px solid rgb(245, 245, 245);
+  padding: 80px 2% 40px;
+  transition: display 0.5s ease-in, padding-top 0.3s ease-in;
+  -webkit-transition: display 0.5s ease-in, padding-top 0.3s ease-in;
+  -moz-transition: display 0.5s ease-in, padding-top 0.3s ease-in;
+  -ms-transition: display 0.5s ease-in, padding-top 0.3s ease-in;
+  -o-transition: display 0.5s ease-in, padding-top 0.3s ease-in;
+}
+.brk img {
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.brk h3,
+.brk h4,
+.brk p,
+.btn {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  word-spacing: 5px;
+}
+
+.brk p {
+  font-size: 80%;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: rgb(114, 113, 113);
+}
+
+.brk .btn {
+  display: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  font-size: 100%;
+  color: white;
+  background-color: hsl(28, 80%, 52%);
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  padding: 10px 40px;
+  letter-spacing: 0px;
+  box-shadow: 2px 2px 5px rgb(139, 139, 139);
+}
+
+.brk:hover {
+  padding-top: 20px;
+  font-size: 105%;
+  border: 3px solid #ecc8a8;
+  padding-bottom: 80px;
+}
+
+.brk:hover .btn {
+  display: block;
+}
