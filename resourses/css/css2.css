@@ -94,15 +94,14 @@ h2:after {
   margin-bottom: 50px;
 }
 .brk {
-  max-height: 570px;
+  max-height: 580px;
   border: 1px solid rgb(245, 245, 245);
-  padding: 60px 2% 10px;
-
-  -webkit-transition: all ease-in-out 0;
-  -moz-transition: all ease-in-out 0;
-  -ms-transition: all ease-in-out 0;
-  -o-transition: all ease-in-out 0;
-  transition: all ease-in-out 0;
+  padding: 90px 2% 10px;
+  -webkit-transition: all ease-in-out 0.4s;
+  -moz-transition: all ease-in-out 0.4s;
+  -ms-transition: all ease-in-out 0.4s;
+  -o-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
   overflow: hidden;
 }
 
@@ -203,6 +202,7 @@ h2:after {
 
 .brk:hover {
   padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 105%;
   border: 3px solid rgb(231, 178, 132);
   padding-bottom: 80px;
