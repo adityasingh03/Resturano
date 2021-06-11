@@ -169,7 +169,7 @@ nav bar
 }
 li {
   display: inline-block;
-  padding: 35px 20px;
+  padding: 35px 20px 10px;
 }
 
 li a:link,
@@ -187,6 +187,96 @@ li a:hover,
 li a:visited {
   border-bottom: 2px solid #e67e22;
 }
+
+/*hover over nav*/
+
+.navlis:hover {
+  position: relative;
+}
+
+.ul1::after {
+  content: " ";
+  opacity: 1;
+  width: 0px;
+  height: 15px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  top: -35px;
+  left: 10%;
+
+  overflow: visible;
+}
+
+.ul1 {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+  width: 200px;
+  position: absolute;
+  top: 70px;
+  line-height: 10px;
+  background-color: white;
+  z-index: 1;
+  opacity: 0;
+  box-shadow: 1px 1px 2px #e67e22;
+}
+.res-ul {
+  width: 280px;
+}
+
+.feed-ul {
+  width: 280px;
+}
+
+.home-ul {
+  width: 250px;
+}
+.navlis .ul1 li {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 70%;
+}
+
+.ul1 li a:link,
+.ul1 li a:visited {
+  color: #222;
+  border: none;
+  font-weight: 500;
+}
+
+.ul1 li a:hover,
+.ul1 li a:active {
+  color: #e67e22;
+}
+.navlis:hover .ul1 {
+  display: block;
+  opacity: 1;
+  height: auto;
+}
+
+/*
+.up,
+.down {
+  font-size: 50%;
+  padding: 10% 2px;
+}
+.up {
+  display: none;
+}
+.navlis:hover .up {
+  display: inline-block;
+}
+
+.navlis:hover .down {
+  display: none;
+}
+*/
+/**/
 /*sticky*/
 .sticky {
   height: 56px;
@@ -196,13 +286,14 @@ li a:visited {
   width: 100%;
   background-color: white;
   z-index: 1;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0px 1px 5px #222;
 }
 
 .sticky .logo {
   float: left;
-  height: 80px;
+  height: 56px;
+  overflow: hidden;
 }
 .stickyul {
   float: right;
@@ -214,9 +305,40 @@ li a:visited {
 .sticky li a {
   color: black;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 }
 
+/*sticky hover*/
+.ul2 {
+  border: 1px solid rgb(80, 80, 80);
+  box-shadow: 2px 2px 5px black;
+  background-color: rgb(80, 80, 80);
+  position: absolute;
+  top: 57px;
+}
+.ul2 li a:link,
+.ul2 li a:visited {
+  color: white;
+  padding-top: 10px;
+}
+.ul2 li a:hover,
+.ul2 li a:active {
+  color: #da731a;
+}
+
+.ul2::after {
+  content: " ";
+  opacity: 1;
+  width: 0px;
+  height: 15px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgb(80, 80, 80) transparent;
+  position: absolute;
+  top: -35px;
+  left: 10%;
+  overflow: visible;
+}
 /*
 favourates
 */
@@ -225,7 +347,7 @@ favourates
   display: block;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 .fav ul {
@@ -268,6 +390,7 @@ ul li img:hover {
 }
 /*how it works*/
 .simple {
+  padding-top: 50px;
   background-color: rgb(240, 240, 240);
   padding-bottom: 50px;
 }
@@ -320,6 +443,7 @@ ul li img:hover {
 cities
 */
 .cities {
+  padding-top: 50px;
   padding-left: 5%;
 }
 .boxcity {
@@ -382,6 +506,7 @@ customer
   background-position: center;
   background-attachment: fixed;
   padding-bottom: 40px;
+  padding-top: 50px;
 }
 
 .customer h2 {
@@ -425,6 +550,7 @@ customer
 
 /*plans*/
 .plan {
+  padding-top: 50px;
   background-color: #bbb;
   padding-bottom: 40px;
 }
@@ -513,6 +639,7 @@ Form
   font-size: 80%;
   padding-bottom: 40px;
   padding-left: 10%;
+  padding-top: 50px;
 }
 .form2 {
   margin-top: 50px;
