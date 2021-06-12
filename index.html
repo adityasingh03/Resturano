@@ -20,7 +20,7 @@
                 <li class="home navlis"><a href="#" style="color:#e67e22;border: none;letter-spacing: 4px;">Home</a>
                     <ul class="home-ul ul1">
                         <li>
-                           <a href='#h1' >We Promise</a>
+                           <a href='#h1-' >We Promise</a>
                         </li>
                         <li>
                             <a href='#h2' >Choices for You</a>
@@ -83,7 +83,7 @@
                         </li>
                         
                     </ul></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#" class="sinin">Sign In</a></li>
             </ul>
         </div>
     </nav>
@@ -95,13 +95,13 @@
     </div>
 </header>
 
-<section class="sticky"  id="h1">
+<section class="sticky"  id="h1-">
     <img class="logo" src="resourses/imgs/logow.png" alt="logo">
     <ul class="stickyul">
         <li class="home navlis"><a href="#" style="color:#e67e22;border: none;letter-spacing: 4px;">Home</a>
             <ul class="home-ul ul1 ul2">
                 <li>
-                   <a href='#h1' >We Promise</a>
+                   <a href='#h1-' >We Promise</a>
                 </li>
                 <li>
                     <a href='#h2' >Choices for You</a>
@@ -164,10 +164,46 @@
                 </li>
                 
             </ul></li>
-        <li><a href="#">Sign In</a></li>
+        <li><a href="#" class="sinin">Sign In</a></li>
     </ul>
 </section>
 <br>
+<section class="modalp modalph">
+<div class="modal">
+    <div class="login activem"><img src="resourses/icon/face_black_24dp.svg">Login</div>
+    <div class="register"><img src="resourses/icon/how_to_reg_black_24dp.svg">register</div>
+    <div class="forgot"><img src="resourses/icon/lock_black_24dp.svg">forgot password</div>
+    
+    <div class="contain">
+    <h3> Log In</h3>
+    <form action="post" target="_self">
+
+        <div class="row2">
+            
+        <div > 
+            <input type="text" placeholder="  Email or Username" id="un" name="un" class="userpass us1">
+        </div>
+    </div>
+    
+    <div class="row2">
+        <div>                                                                               
+            <input type="text" placeholder="  Password" id="pass" name="pass" class="userpass">
+        </div>
+    </div>
+    <div class="row2">
+        <div> 
+            <button class="btn-lg userpass">Log In</button>
+        </div>
+    </div>
+
+    <a href="#">Forgot Password ?</a>
+    </form>
+</div>
+</div>
+
+
+</section>
+
 
 <section class="we-are js-we">
 
@@ -495,7 +531,7 @@
 
 
 <script src="vendors/jquery/jquery.waypoints.min.js"></script>
-<script src="resourses/jquery/script.js"></script>
+<script src="resourses/js/script.js"></script>
 
 
 </body>
