@@ -362,10 +362,7 @@ li a:visited {
   width: 100%;
   padding-top: 25vh;
   height: 100vh;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.4)
-  );
+  backdrop-filter: blur(3px);
 }
 
 .modal {
@@ -377,6 +374,8 @@ li a:visited {
   grid-template-rows: auto auto auto;
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 4px black;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .contain {
@@ -470,6 +469,7 @@ li a:visited {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  color: black;
 }
 
 .modal a:hover,
@@ -478,6 +478,16 @@ li a:visited {
   font-size: 105%;
   left: 35%;
 }
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 /*
 favourates
 */
