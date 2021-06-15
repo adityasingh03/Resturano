@@ -9,7 +9,53 @@ html {
   font-size: 20px;
   color: black;
 }
+.body {
+  position: relative;
+}
+/*cart */
+.cart {
+  position: fixed;
+  top: 0;
+  left: 99%;
+  background-color: #222;
+  width: 1%;
+  z-index: 5;
+  height: 100vh;
+}
+.cartimg {
+  position: fixed;
+  top: 50%;
+  left: 97%;
+  z-index: 5;
+  cursor: pointer;
+  background-color: rgb(83, 83, 83);
+  padding: 15px 12px 10px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
 
+.cartimg img {
+  height: 20px;
+  width: 25px;
+}
+.cartclick {
+  left: 50%;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-image: url("../icon/1x/shopping_cart_black_24dp.svg");
+}
+
+.cartimgclick {
+  position: fixed;
+  top: 50%;
+  left: 48%;
+  z-index: 5;
+}
 /*navbar*/
 li {
   display: inline-block;
@@ -36,8 +82,12 @@ li a:active {
   height: 60px;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  position: sticky;
+  top: 0;
+  left: 0;
+
   box-shadow: 0px 1px 5px #222;
+  z-index: 10;
 }
 
 .sticky .logo {

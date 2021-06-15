@@ -562,6 +562,12 @@ ul li img:hover {
   transform: scale(1);
 }
 /*how it works*/
+.js-we .row {
+  margin-top: 0;
+}
+.js-we .row h2 {
+  margin-top: 40px;
+}
 .simple {
   padding-top: 50px;
   background-color: rgb(240, 240, 240);

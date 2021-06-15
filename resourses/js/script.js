@@ -1,5 +1,5 @@
 "use strict";
-const closebtn = document.querySelector(".containh3img");
+const closebtn = document.querySelectorAll(".containh3img");
 const signin = document.querySelector(".sinin");
 const overlay = document.querySelector(".overlay");
 
@@ -59,7 +59,9 @@ signin.addEventListener("click", f1);
 
 overlay.addEventListener("click", f2);
 
-closebtn.addEventListener("click", f2);
+closebtn[0].addEventListener("click", f2);
+closebtn[1].addEventListener("click", f2);
+closebtn[2].addEventListener("click", f2);
 
 register.addEventListener("click", f3);
 login.addEventListener("click", f4);
