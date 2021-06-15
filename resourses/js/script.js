@@ -1,19 +1,22 @@
 "use strict";
+const closebtn = document.querySelector(".containh3img");
+const signin = document.querySelector(".sinin");
+const overlay = document.querySelector(".overlay");
 
-//Modal Window
-document.querySelector(".sinin").addEventListener("click", function () {
+//functions
+const f1 = function (e) {
+  e.preventDefault();
   document.querySelector(".modalp").classList.remove("modalph");
   document.querySelector(".modalp").classList.add("modalpb");
-});
+};
 
-document.querySelector(".overlay").addEventListener("click", function () {
+const f2 = function () {
   document.querySelector(".modalp").classList.add("modalph");
   document.querySelector(".modalp").classList.remove("modalpb");
-});
+};
+//Modal Window
+signin.addEventListener("click", f1);
 
-document.querySelector(".overlay").addEventListener("keydown", function (e) {
-  console.log(e.key);
-  document.querySelector(".modalp").classList.add("modalph");
-  document.querySelector(".modalp").classList.remove("modalpb");
-  console.log(1);
-});
+overlay.addEventListener("click", f2);
+
+closebtn.addEventListener("click", f2);

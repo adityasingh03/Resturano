@@ -309,6 +309,15 @@ li a:visited {
 }
 
 /*sticky hover*/
+.overlay {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 .ul2 {
   border: 1px solid rgb(80, 80, 80);
   box-shadow: 2px 2px 5px black;
@@ -362,19 +371,20 @@ li a:visited {
   width: 100%;
   padding-top: 25vh;
   height: 100vh;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
+  font-weight: 400;
 }
 
 .modal {
   display: grid;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
   grid-template-columns: 30% auto auto;
   grid-template-rows: auto auto auto;
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 4px black;
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
 }
 
@@ -384,12 +394,19 @@ li a:visited {
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
+  position: relative;
 }
 .contain h3 {
   margin: 20px 0 30px;
   padding: 0;
   font-size: 110%;
   text-transform: uppercase;
+  font-weight: 400;
+}
+.contain h3 img {
+  position: absolute;
+  left: 107%;
+  top: 4%;
 }
 .userpass {
   width: 100%;
@@ -431,14 +448,14 @@ li a:visited {
 .userpass:focus {
   width: 100%;
   padding-left: 30px;
-  border-color: rgb(111, 189, 98);
+  border-color: #e67e22;
 }
 
 .btn-lg {
   outline: none;
   border: none;
   color: white;
-  background-color: rgb(111, 189, 98);
+  background-color: #e67e22;
   padding-left: 0px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -450,11 +467,11 @@ li a:visited {
 }
 .btn-lg:focus {
   padding-left: 0px;
-  background-color: rgb(89, 196, 70);
+  background-color: #e67e22;
 }
 .activem {
   color: white;
-  background-color: rgb(111, 189, 98);
+  background-color: #e67e22;
 }
 
 .modal a:link,
@@ -474,18 +491,9 @@ li a:visited {
 
 .modal a:hover,
 .modal a:active {
-  color: rgb(111, 189, 98);
+  color: #e67e22;
   font-size: 105%;
   left: 35%;
-}
-
-.overlay {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
 }
 
 /*
