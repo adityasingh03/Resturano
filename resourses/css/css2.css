@@ -16,30 +16,32 @@ html {
 .cart {
   position: fixed;
   top: 0;
-  left: 99%;
+  left: 99.5%;
   background-color: #222;
-  width: 1%;
+  width: 0.5%;
   z-index: 5;
   height: 100vh;
+  transition: all 0.2s;
 }
 .cartimg {
   position: fixed;
   top: 50%;
-  left: 97%;
+  left: 98%;
   z-index: 5;
   cursor: pointer;
-  background-color: rgb(83, 83, 83);
-  padding: 15px 12px 10px;
+  background-color:#222;
+  padding: 15px 16px 10px 8px;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
+   transition: all 0.2s;
 }
 
 .cartimg img {
   height: 20px;
-  width: 25px;
+  width: 26px;
 }
 .cartclick {
   left: 50%;
@@ -48,13 +50,22 @@ html {
   background-repeat: no-repeat;
   background-size: 50% 50%;
   background-image: url("../icon/1x/shopping_cart_black_24dp.svg");
+  transition: all 0.4s;
 }
 
 .cartimgclick {
   position: fixed;
   top: 50%;
-  left: 48%;
+  left: 48.5%;
   z-index: 5;
+  transition: all 0.4s;
+}
+
+.h2c
+{
+  margin-top:50px;
+  background-color: #222;
+
 }
 /*navbar*/
 li {
@@ -65,7 +76,6 @@ li {
 li a:link,
 li a:visited {
   text-decoration: none;
-
   text-transform: uppercase;
   letter-spacing: 1.5px;
   word-spacing: 2px;
@@ -215,14 +225,15 @@ li a:active {
 */
 /*breakfast*/
 
-h2 {
+h2  {
   letter-spacing: 2px;
-  background-color: #222;
-  font-size: 170%;
+  background-color: #444;
+  font-size: 120%;
   font-weight: 300;
   padding: 20px 10px;
   text-align: center;
   color: white;
+  text-transform: uppercase;
 }
 
 h2:after {
@@ -233,7 +244,7 @@ h2:after {
   background-color: rgb(230, 126, 34);
   content: " ";
   border: 1px solid #e67e22;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .dis {
