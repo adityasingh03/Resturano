@@ -1,6 +1,6 @@
 "use script";
 
-let foodi = ["chicken Muglai", "Burger", "Pizza", "Nachos"];
+let foodi = ["Pav Bhaji", "Burger", "Samosa", "Nacho and Dip"];
 const addc = document.querySelectorAll(".btn");
 
 addc[0].addEventListener("click", function () {
@@ -28,3 +28,5 @@ document.querySelector(".cartimg").addEventListener("click", function () {
     document.querySelector(".cartimg").classList.add("cartimgclick");
   }
 });
+
+

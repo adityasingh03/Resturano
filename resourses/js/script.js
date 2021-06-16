@@ -59,9 +59,9 @@ signin.addEventListener("click", f1);
 
 overlay.addEventListener("click", f2);
 
-closebtn[0].addEventListener("click", f2);
-closebtn[1].addEventListener("click", f2);
-closebtn[2].addEventListener("click", f2);
+for(let i=0; i <3 ;i++)
+closebtn[i].addEventListener("click", f2);
+
 
 register.addEventListener("click", f3);
 login.addEventListener("click", f4);
