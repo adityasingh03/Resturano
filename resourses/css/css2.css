@@ -86,6 +86,7 @@ html {
   border: 2px solid rgba(0, 0, 0, 0.486);
   text-align: center;
 }
+
 .item div {
   display: inline-flex;
   flex-direction: row-reverse;

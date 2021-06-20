@@ -45,6 +45,8 @@ const f2 = function () {
 };
 for (let i = 0; i < costi.length; i++) count.push(0);
 const addc = document.querySelectorAll(".btn");
+const addarr1 = document.querySelectorAll(".additem");
+console.log(addarr1);
 addc[0].addEventListener("click", function () {
   count[0]++;
   f2();
@@ -204,22 +206,39 @@ addc[31].addEventListener("click", function () {
   count[31]++;
   f2();
 });
+let c3;
+if (c3 >= 1) {
+  const addarr = document.querySelectorAll(".additem");
+  addarr[0].addEventListener("click", function () {
+    console.log(1);
+    let newc = document.querySelectorAll(".number");
+    let newc1 = newc[0].textContent;
+    newc[0].textContent = Number(newc1) + 1;
+  });
 
-console.log(count);
+  const remarr = document.querySelector(".removeitem");
+  remarr.addEventListener("click", function () {
+    let newc = document.querySelector(".number").textContent;
+    newc > 0
+      ? (document.querySelector(".number").textContent = Number(newc) - 1)
+      : (document.querySelector(".number").textContent = 0);
+  });
+}
 const cartin = document.querySelector(".carttext");
 const brk = document.querySelectorAll(".brk");
 const f1 = function () {
   brk.forEach(function (i1, j) {
+    c3++;
     const html = ` <div class="item">
   <img src="resourses/imgs/food/p${j}.png" class="imgfc" />
   <p> ${foodi[j]} </p>
   <p>Rs ${costi[j]}</p>
   <div>
-    <img src="resourses/icon/add_circle_black_24dp.svg" />
-    <p>${count[j]}</p>
-    <img src="resourses/icon/remove_circle_black_24dp.svg" />
+    <img src="resourses/icon/add_circle_black_24dp.svg" class="additem"/>
+    <p class="number">${count[j]}</p>
+    <img src="resourses/icon/remove_circle_black_24dp.svg" class="removeitem"/>
   </div>
-  <p>Total:Rs ${costi[j] * count[j]}</p>
+  <p> Rs ${costi[j] * count[j]}</p>
 </div>`;
     if (count[j] > 0) cartin.insertAdjacentHTML("beforeend", html);
   });

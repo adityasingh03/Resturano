@@ -195,7 +195,7 @@ li a:visited {
 }
 
 .ul1::after {
-  content: " ";
+  content: "";
   opacity: 1;
   width: 0px;
   height: 15px;
@@ -205,7 +205,7 @@ li a:visited {
   position: absolute;
   top: -35px;
   left: 10%;
-
+  z-index: -1;
   overflow: visible;
 }
 
@@ -219,7 +219,7 @@ li a:visited {
   top: 70px;
   line-height: 10px;
   background-color: white;
-  z-index: 1;
+  z-index: 10;
   opacity: 0;
   box-shadow: 1px 1px 2px #e67e22;
 }
@@ -240,6 +240,7 @@ li a:visited {
   padding: 10px;
   text-transform: uppercase;
   font-size: 70%;
+  z-index: 10;
 }
 
 .ul1 li a:link,
@@ -247,6 +248,7 @@ li a:visited {
   color: #222;
   border: none;
   font-weight: 500;
+  z-index: 10;
 }
 
 .ul1 li a:hover,
@@ -360,7 +362,7 @@ li a:visited {
   display: none;
 }
 .modalp {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -373,6 +375,7 @@ li a:visited {
   height: 100vh;
   backdrop-filter: blur(4px);
   font-weight: 400;
+  z-index: 10;
 }
 
 .modal {

@@ -1,6 +1,6 @@
 "use strict";
 const closebtn = document.querySelectorAll(".containh3img");
-const signin = document.querySelector(".sinin");
+const signin = document.querySelectorAll(".sinin");
 const overlay = document.querySelector(".overlay");
 
 const login = document.querySelector(".login");
@@ -55,13 +55,11 @@ const f5 = function () {
   }
 };
 //Modal Window
-signin.addEventListener("click", f1);
+signin.forEach((val) => val.addEventListener("click", f1));
 
 overlay.addEventListener("click", f2);
 
-for(let i=0; i <3 ;i++)
-closebtn[i].addEventListener("click", f2);
-
+for (let i = 0; i < 3; i++) closebtn[i].addEventListener("click", f2);
 
 register.addEventListener("click", f3);
 login.addEventListener("click", f4);
