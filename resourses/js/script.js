@@ -64,3 +64,17 @@ for (let i = 0; i < 3; i++) closebtn[i].addEventListener("click", f2);
 register.addEventListener("click", f3);
 login.addEventListener("click", f4);
 forgot.addEventListener("click", f5);
+
+//sticky nav
+const entryf = function (entries, observe) {
+  const [entry] = entries;
+  if (!entry.isIntersecting)
+    document.querySelector(".sticky").classList.remove("stickyhidden");
+  else document.querySelector(".sticky").classList.add("stickyhidden");
+  console.log(entry.isIntersecting);
+};
+const observer = new IntersectionObserver(entryf, {
+  root: null,
+  threshold: 0,
+});
+observer.observe(document.querySelector("header"));

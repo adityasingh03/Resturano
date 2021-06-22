@@ -290,6 +290,10 @@ li a:visited {
   z-index: 1;
   overflow: visible;
   box-shadow: 0px 1px 5px #222;
+  margin-bottom: 20px;
+}
+.stickyhidden {
+  display: none;
 }
 
 .sticky .logo {
