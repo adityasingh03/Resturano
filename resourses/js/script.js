@@ -65,16 +65,49 @@ register.addEventListener("click", f3);
 login.addEventListener("click", f4);
 forgot.addEventListener("click", f5);
 
+// smooth scrolling
+document.querySelectorAll(".home").forEach((navbar) => {
+  navbar.addEventListener("click", function (e) {
+    e.preventDefault();
+    console.log(e.target);
+
+    if (
+      !e.target.classList.contains("linkh") &&
+      !e.target.classList.contains("headlink")
+    )
+      return;
+    const clickl = e.target.getAttribute("href");
+    document.querySelector(clickl).scrollIntoView({ behavior: "smooth" });
+    console.log(clickl);
+  });
+});
 //sticky nav
 const entryf = function (entries, observe) {
   const [entry] = entries;
   if (!entry.isIntersecting)
     document.querySelector(".sticky").classList.remove("stickyhidden");
   else document.querySelector(".sticky").classList.add("stickyhidden");
-  console.log(entry.isIntersecting);
 };
 const observer = new IntersectionObserver(entryf, {
   root: null,
   threshold: 0,
 });
-observer.observe(document.querySelector("header"));
+observer.observe(document.querySelector(".header"));
+/*
+const entryf2 = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section_up");
+  entry.target.classList.add("section_on");
+  observer.unobserve(entry.target);
+};
+const effectobserve = new IntersectionObserver(entryf2, {
+  root: null,
+  threshold: 0.3,
+  rootMargin: "0px",
+});
+document.querySelectorAll("section").forEach((val) => {
+  effectobserve.observe(val);
+  val.classList.add("section_up");
+});
+*/

@@ -46,8 +46,9 @@ h3 {
 h2 {
   font-size: 170%;
   font-weight: 300;
-  padding: 50px 0 10px 0;
+  padding: 60px 0 10px 0;
   text-align: center;
+  margin-top: 0;
 }
 
 h2:after {
@@ -95,7 +96,7 @@ h4 {
 /*
 header
 */
-header {
+.header {
   background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.4)),
     url("img/hero.jpg");
   background-size: cover;
@@ -111,6 +112,10 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 /*
@@ -194,21 +199,6 @@ li a:visited {
   position: relative;
 }
 
-.ul1::after {
-  content: "";
-  opacity: 1;
-  width: 0px;
-  height: 15px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent white transparent;
-  position: absolute;
-  top: -35px;
-  left: 10%;
-  z-index: -1;
-  overflow: visible;
-}
-
 .ul1 {
   display: none;
   padding-top: 10px;
@@ -223,6 +213,7 @@ li a:visited {
   opacity: 0;
   box-shadow: 1px 1px 2px #e67e22;
 }
+
 .res-ul {
   width: 280px;
 }
@@ -233,6 +224,19 @@ li a:visited {
 
 .home-ul {
   width: 250px;
+}
+.ul1::before {
+  content: "";
+  opacity: 1;
+  width: 0px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgb(255, 255, 255) transparent;
+  position: absolute;
+  top: -20px;
+  left: 10%;
+  z-index: -100;
+  overflow: visible;
 }
 .navlis .ul1 li {
   display: block;
@@ -290,7 +294,7 @@ li a:visited {
   z-index: 1;
   overflow: visible;
   box-shadow: 0px 1px 5px #222;
-  margin-bottom: 20px;
+  margin-top: -50px;
 }
 .stickyhidden {
   display: none;
@@ -345,12 +349,12 @@ li a:visited {
   content: " ";
   opacity: 1;
   width: 0px;
-  height: 15px;
+
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent rgb(80, 80, 80) transparent;
   position: absolute;
-  top: -35px;
+  top: -20px;
   left: 10%;
   overflow: visible;
 }
@@ -525,7 +529,7 @@ favourates
 
 .fav {
   display: block;
-  margin: 0;
+  margin-top: 100px;
   padding: 0;
   padding-top: 60px;
 }
@@ -736,7 +740,7 @@ customer
 
 /*plans*/
 .plan {
-  padding-top: 50px;
+  padding-top: 30px;
   background-color: #bbb;
   padding-bottom: 40px;
 }
@@ -927,7 +931,6 @@ footer
 }
 
 .social-m {
-  display: inline-block;
   margin-right: 10px;
   float: right;
 }
@@ -950,4 +953,26 @@ footer
 
 .footp {
   clear: both;
+}
+
+.section_on {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.section_up {
+  opacity: 0;
+  transform: translateY(60px);
+  -webkit-transform: translateY(60px);
+  -moz-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  -o-transform: translateY(60px);
 }
