@@ -1,9 +1,7 @@
 "use strict";
 const locat = document.querySelector(".map");
 
-locat.addEventListener("click", function () {
-  console.log(2);
-});
+locat.addEventListener("click", function () {});
 
 navigator.geolocation.getCurrentPosition(
   function (position) {
@@ -15,11 +13,32 @@ navigator.geolocation.getCurrentPosition(
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
-
-    L.marker([latitude, longitude]).addTo(map).bindPopup("Home!!").openPopup();
-
+    const arr = [latitude + 0.01, longitude - 0.01];
+    L.marker([latitude, longitude])
+      .addTo(map)
+      .bindPopup(
+        L.popup({
+          autoclose: false,
+          closeonclick: false,
+          classname: "popup",
+        })
+      )
+      .setPopupContent("Home")
+      .openPopup();
+    L.marker(arr)
+      .addTo(map)
+      .bindPopup(
+        L.popup({
+          autoclose: false,
+          closeonclick: false,
+          classname: "popup",
+        })
+      )
+      .setPopupContent("Restraunt")
+      .openPopup();
     map.on("click", function (eventmap) {
-      console.log(eventmap);
+      const { lat, lng } = eventmap.latlng;
+      console.log(lat, lng);
     });
   },
   function () {
