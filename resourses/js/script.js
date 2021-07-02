@@ -69,7 +69,6 @@ forgot.addEventListener("click", f5);
 document.querySelectorAll(".home").forEach((navbar) => {
   navbar.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(e.target);
 
     if (
       !e.target.classList.contains("linkh") &&
@@ -77,10 +76,27 @@ document.querySelectorAll(".home").forEach((navbar) => {
     )
       return;
     const clickl = e.target.getAttribute("href");
+
+    console.log();
     document.querySelector(clickl).scrollIntoView({ behavior: "smooth" });
     console.log(clickl);
   });
 });
+/*Providing faiding of ul*/
+document.querySelectorAll(".ul2").forEach((ul) => {
+  ul.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (!e.target.classList.contains("linkh")) return;
+    console.log(2);
+
+    ul.style.display = "none";
+  });
+});
+
+document.querySelector(".stickyul").addEventListener("mouseenter", function () {
+  document.querySelector(".ul2").style.display = "block";
+});
+
 //sticky nav
 const entryf = function (entries, observe) {
   const [entry] = entries;
@@ -93,6 +109,26 @@ const observer = new IntersectionObserver(entryf, {
   threshold: 0,
 });
 observer.observe(document.querySelector(".header"));
+
+//scroll
+/*
+const f6 = function () {
+  document.addEventListener("scroll", function () {
+    document.querySelector("#h1-").scrollIntoView({ behavior: "smooth" });
+  });
+};
+if (document.querySelector(".header").getBoundingClientRect().bottom > 100) {
+  document.addEventListener("scroll", function (e) {
+    e.preventDefault();
+    document.querySelector("#h1-").scrollIntoView({ behavior: "auto" });
+  });
+}
+
+document.querySelector("body").addEventListener("click", function () {
+  let bound = document.querySelector(".header").getBoundingClientRect();
+  console.log(bound);
+});
+*/
 /*
 const entryf2 = function (entries, observer) {
   const [entry] = entries;

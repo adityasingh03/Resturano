@@ -174,7 +174,7 @@ nav bar
 }
 li {
   display: inline-block;
-  padding: 35px 20px 20px;
+  padding: 35px 20px 22px;
 }
 
 li a:link,
@@ -185,7 +185,11 @@ li a:visited {
   letter-spacing: 1.5px;
   word-spacing: 2px;
   border-bottom: 0 solid transparent;
-  transition: border-bottom 0.2s;
+  transition: border-bottom 0.5s;
+  -webkit-transition: border-bottom 0.5s;
+  -moz-transition: border-bottom 0.5s;
+  -ms-transition: border-bottom 0.5s;
+  -o-transition: border-bottom 0.5s;
 }
 
 li a:hover,
@@ -211,7 +215,7 @@ li a:visited {
   background-color: white;
   z-index: 10;
   opacity: 0;
-  box-shadow: 1px 1px 2px #e67e22;
+  border-left: 4px solid #e67e22;
 }
 
 .res-ul {
@@ -975,4 +979,8 @@ footer
   -moz-transform: translateY(60px);
   -ms-transform: translateY(60px);
   -o-transform: translateY(60px);
+}
+
+.hid {
+  display: none;
 }
