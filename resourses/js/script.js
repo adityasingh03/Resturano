@@ -147,3 +147,33 @@ document.querySelectorAll("section").forEach((val) => {
   val.classList.add("section_up");
 });
 */
+document.querySelector(".signb").addEventListener("click", function (e) {
+  e.preventDefault();
+  if (document.querySelector(".signu").value.toLowerCase() === "user1") {
+    console.log(true);
+    if (document.querySelector(".signp").value === "pass1") {
+      document.querySelector(".sinout").classList.remove("hidden");
+      document.querySelector(".sinin").classList.add("hidden");
+      document.querySelector(".sininl").style.padding = "0";
+      document.querySelector(".signu").value = "";
+      document.querySelector(".signp").value = "";
+
+      f2();
+    } else {
+      document.querySelector(".signp").value = "";
+      document.querySelector(".signp").style.placeholder = "Incorrect Password";
+      document.querySelector(".signp").style.backgroundColor = "#ffcccc";
+    }
+  } else {
+    document.querySelector(".signu").value = "";
+    document.querySelector(".signp").value = "";
+    document.querySelector(".signu").style.backgroundColor = "#ffcccc";
+  }
+});
+
+document.querySelector(".sinout").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector(".sinin").classList.remove("hidden");
+  document.querySelector(".sinout").classList.add("hidden");
+  document.querySelector(".sininl").style.padding = "20px";
+});

@@ -46,7 +46,7 @@ const f2 = function () {
 for (let i = 0; i < costi.length; i++) count.push(0);
 const addc = document.querySelectorAll(".btn");
 const addarr1 = document.querySelectorAll(".additem");
-console.log(addarr1);
+
 addc[0].addEventListener("click", function () {
   count[0]++;
   f2();
@@ -252,4 +252,8 @@ document.querySelector(".cartimg").addEventListener("click", function () {
     document.querySelector(".cart").classList.add("cartclick");
     document.querySelector(".cartimg").classList.add("cartimgclick");
   }
+});
+
+document.querySelector(".removeitem").addEventListener("click", function (e) {
+  console.log(e);
 });
