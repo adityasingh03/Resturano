@@ -983,3 +983,106 @@ footer
 .hid {
   display: none;
 }
+/*CHATBOT*/
+.chatbot {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+}
+
+.botimg {
+  height: 70px;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .botimg {
+    animation: bot-spin infinite 4s ease-in-out;
+    -webkit-animation: bot-spin infinite 4s ease-in-out;
+  }
+}
+
+@keyframes bot-spin {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+  }
+}
+
+.chattxt {
+  border: 0.5px solid #da731a;
+  box-shadow: 2px 2px 10px rgb(124, 124, 124);
+  position: fixed;
+  z-index: 10;
+  height: 70vh;
+  bottom: 20vh;
+  width: 30vw;
+  right: 50px;
+  background-color: white;
+  margin-top: 0;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+
+.both1 {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #f1b885 5%, #da731a 70%);
+  color: white;
+  border-radius: 20px 20px 0 0;
+  padding: 15px;
+  font-weight: 500;
+}
+
+.adminbot {
+  text-align: center;
+  margin: auto;
+  padding: 8px;
+}
+.bot_container {
+  position: absolute;
+  top: 36px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  background-color: rgb(243, 243, 243);
+}
+
+.botcross {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}

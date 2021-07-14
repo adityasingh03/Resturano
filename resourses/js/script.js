@@ -177,3 +177,23 @@ document.querySelector(".sinout").addEventListener("click", function (e) {
   document.querySelector(".sinout").classList.add("hidden");
   document.querySelector(".sininl").style.padding = "20px";
 });
+
+const arr = [
+  {
+    q1: "What is your name",
+    q2: "What is your age",
+  },
+  {
+    q1: "Would you likl eto order or reserve ?",
+    q2: "what is your favouraite dish?",
+  },
+];
+
+document.querySelector(".botimg").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector(".chattxt").classList.toggle("hid");
+});
+document.querySelector(".botcross").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector(".chattxt").classList.add("hid");
+});
